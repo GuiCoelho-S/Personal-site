@@ -20,6 +20,7 @@ export default createGlobalStyle `
         --white:        #ffffff;
         --blue:         #34effb;
         --grey:         #9d9d9d;
+        --lightGray:    #5f605a;
         --red:          #b05252;
         --link:         #0057ff;
         --orange:       #fb8028;

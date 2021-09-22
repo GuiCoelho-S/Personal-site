@@ -1,16 +1,19 @@
 import Home from 'pages/Home';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-
+import PageInfo from 'pages/PageInfo';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 const AppRouter = () => {
 
 
     return(
         <BrowserRouter>
-            <Home />
-            <Switch>
+            <Route exact path="/" component={Home}/>
+
+            <Route path="/main" component={PageInfo}>
+                
+
+            </Route>
             
-            </Switch>
         </BrowserRouter>
     )
 }

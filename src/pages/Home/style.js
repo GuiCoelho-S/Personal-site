@@ -196,3 +196,23 @@ svg {
 }}
 
 `
+
+export const TotalProjects = styled.article`
+position:absolute;
+top:20px;
+right:20px;
+display:inline-flex;
+align-items:Center;
+
+p {
+    padding-right:20px;
+}
+`
+export const Circle = styled.div`
+width:40px;
+height:40px;
+border-radius:50%;
+background-color: var(--white);
+display:grid;
+place-items:center;
+`

@@ -3,12 +3,13 @@ import { useState, useEffect } from 'react';
 import { AiOutlinePlusCircle, AiOutlineClockCircle, AiOutlineClose, AiOutlineDown } from "react-icons/ai";
 import { GiBrazilFlag } from "react-icons/gi";
 import { FaBuilding } from "react-icons/fa";
-
+import { projects } from "data/projectData"
 import * as S from './style'
 import ReactImg from 'components/Home/IMGReact';
+import { useHistory } from 'react-router-dom';
 
 const Home = () => {
-
+    const history = useHistory();
     const [loading, setLoading] = useState(true);
     const [showMore, setShowMore] = useState(false);
     const [nextPage, setNextPage] = useState(false);
@@ -57,7 +58,8 @@ const Home = () => {
             
         }
         {
-            nextPage ? <S.OtherPage><AiOutlineDown /></S.OtherPage> : <></>
+            nextPage ? (<><S.OtherPage onClick={() => history.push('/main')}><AiOutlineDown /></S.OtherPage>
+            <S.TotalProjects><p>Projetos feitos:</p><S.Circle>{projects.length}</S.Circle></S.TotalProjects></>) : <></>
         }
         </S.Container>
     )
