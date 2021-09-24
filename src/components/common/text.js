@@ -21,6 +21,10 @@ export const Title = styled.div`
   font-size:2rem;
   text-align:start;
   padding:20px;
+
+  @media (max-width:400px){
+    text-align:center;
+  }
 `;
 
 export const SubTitle = styled.div`
