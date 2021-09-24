@@ -3,9 +3,7 @@ import React from 'assets/img/react.png'
 
 const ReactImg = () => {
     return(
-       
         <Image src={React}/>
-       
     )
 }
 

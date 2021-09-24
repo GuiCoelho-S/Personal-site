@@ -21,7 +21,6 @@ display:flex;
 flex-direction:column;
 align-items:Center;
 background-color: var(--lightGray);
-
 article {
   padding-top:50px;
   display:flex;
@@ -39,7 +38,8 @@ p {
   width:100%;
   flex-direction: row;
   height:auto;
-  padding:0;
+  padding:10px;
+
   article {
     flex-direction: row;  
     padding:0;
@@ -50,7 +50,7 @@ p {
   }
   
 @media (max-width:500px){
-
+  
   article {
     div {
       width:75%;
@@ -82,20 +82,14 @@ position:relative;
   flex-direction: column;
 
   ${Section}{
-    position:fixed;
-    bottom:60px;
+    position:static;
     width:100%;
     height:Auto;
     min-height:none !important;
   }
 }
 
-@media (max-width:550px){
 
-  ${Section}{
-    bottom:120px ;
-  }
-}
 `
 
 

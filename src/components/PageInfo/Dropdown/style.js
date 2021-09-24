@@ -28,6 +28,10 @@ export const DropDownStyle = styled.div`
     border-radius:0;
     justify-content:space-evenly;
 }
+@media (max-width:420px){
+    flex-direction: column;
+    position:absolute;
+}
 `;
 
 export const HiddenDropDown = styled(Icon)`
@@ -36,9 +40,7 @@ right:5px;
 svg {
     fill:var(--grey);
 }
-@media (max-width:900px){
-    display:none;
-}
+
 `
 
 export const Link = styled.button`
@@ -49,7 +51,7 @@ display:flex;
 padding:0;
 transition: box-shadow 1.5s ease;
 transition-delay:0.3s;
-width:180px;
+width:140px;
 p {
     text-align:center;
     color:var(--grey);
@@ -76,7 +78,7 @@ p {
     height:60px;
     align-items: center;
     p {
-        font-size:clamp(0.7rem,1vh,1.2rem);
+        font-size:1rem;
     }
 }
 `

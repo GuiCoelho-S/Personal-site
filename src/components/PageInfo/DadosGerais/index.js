@@ -9,7 +9,7 @@ const DadosGerais = () => {
                 <Title>Dados gerais</Title>
                 <SubTitle>Sobre mim</SubTitle>
                 <SimpleText>
-                    Olá, me chamo Guilherme, tenho 19 anos e ingressei nesse mundo da tecnologia em meados de março de 2021. De lá pra cá venho melhorando constantemente e aprendendo novos frameworks, metodologias, código limpo e performance. Aqui mostro de uma forma mais dinâmica meus projetos, para que você não precise entrar no meu github e caçar as melhores aplicações. Além de mostrar alguns códigos que me auxiliam no dia a dia.
+                    Olá, me chamo Guilherme, tenho 19 anos e ingressei nesse mundo da tecnologia em meados de março de 2021. De lá pra cá venho melhorando constantemente e aprendendo novos frameworks, metodologias, código limpo e performance. Aqui mostro de uma forma mais dinâmica meus projetos, para que você não precise entrar no meu github e procurar as melhores aplicações. Além de mostrar alguns códigos que me auxiliam no dia a dia.
                 </SimpleText>
                 <SubTitle>Pretensões futuras</SubTitle>
                 <SimpleText>

@@ -11,6 +11,9 @@ align-items:inherit;
 @media (max-width:540px){
   padding-bottom:120px;
 }
+@media (max-width:350px){
+  padding:0 10px;
+}
 `
 
 export const Title = styled.div`
@@ -31,6 +34,7 @@ export const SimpleText = styled.p`
 align-self: center;
 width:80%;
 text-align:justify;
+word-wrap: break-word;
 color:var(--white);
 font-weight: 300;
 line-height:26px;
