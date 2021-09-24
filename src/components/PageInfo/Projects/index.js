@@ -62,17 +62,3 @@ const Projects = () => {
     )
 }
 export default Projects
-
-/*
-
-                            <S.CardReact key={item.id}>
-                                <h2>{item.title}</h2>
-                                <div>
-                                <a href={item.site} target="_blank" rel="noreferrer">Clique para ver o site </a>
-                                <a href={item.code} target="_blank" rel="noreferrer">Clique para ver o código </a>
-                                </div>
-                                <p>{item.description} </p>
-                                <S.iconImg src={ReactIMG} />
-                            </S.CardReact>
-
-*/

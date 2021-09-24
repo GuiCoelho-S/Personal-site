@@ -3,12 +3,11 @@ import styled from 'styled-components';
 
 
 export const ContainerCard = styled.div`
-display:flex;
-gap:20px;
-width:100%;
-flex-wrap:wrap;
-align-items:start;
-justify-content:center;
+
+display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
 
 `
 
@@ -16,6 +15,8 @@ export const Card = styled.article`
 position:relative;
 flex:1 1 280px;
 border:1px solid green;
+background-color:#5b5f58;
+
 flex-direction:column;
 justify-content:space-evenly;
 gap:5px;
