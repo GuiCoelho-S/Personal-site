@@ -18,7 +18,7 @@ const Academica = () => {
                 </S.ContainerItem>
 
                 <S.ContainerItem>
-                    <S.Data>2019 - Cursando</S.Data>
+                    <S.Data>2021 - Cursando</S.Data>
                     <S.Content>
                         <SubTitle>Ciência da computação</SubTitle>
                         <SimpleText>Universidade São Judas Tadeu</SimpleText>
@@ -26,14 +26,14 @@ const Academica = () => {
                 </S.ContainerItem>
                 
                 <S.ContainerItem>
-                    <S.Data>2019 - Cursando</S.Data>
+                    <S.Data>2021 - Cursando</S.Data>
                     <S.Content>
                         <SubTitle>Cultura Inglesa </SubTitle>
                         <SimpleText>Nível: global 5 (pré-intermediário) </SimpleText>
                     </S.Content>
                 </S.ContainerItem>
                 <S.ContainerItem>
-                    <S.Data>2019 - Cursando</S.Data>
+                    <S.Data>2021 - Cursando</S.Data>
                     <S.Content>
                         <SubTitle>Alura</SubTitle>
                         <SimpleText>Cursos focados na área de tecnologia</SimpleText>
