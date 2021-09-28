@@ -35,6 +35,7 @@ flex-direction:column;
 justify-content:flex-start;
 align-items:start;
 
+
 @media (max-width:600px){
     align-items:Center;
 

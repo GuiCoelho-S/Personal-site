@@ -28,9 +28,11 @@ const PageInfo = () => {
                     <div>
                     <p>Um lugar que armazena tudo de melhor que aprendi como desenvolvedor</p>
                     <S.ContainerIcons>
-                        <S.Icons href="https://github.com/GuiCoelho-S" target="_blank" ><AiFillGithub /></S.Icons>
-                        <S.Icons href="https://www.linkedin.com/in/guilherme-santos-coelho-1b7036210/" target="_blank"><AiFillLinkedin /></S.Icons>
-                        <S.Icons href="https://wa.me/5511992103006?text=Olá,%20🙂"><AiOutlineWhatsApp /></S.Icons>
+                        
+                            <S.Icons href="https://github.com/GuiCoelho-S" target="_blank" ><AiFillGithub /></S.Icons>
+                            <S.Icons href="https://www.linkedin.com/in/guilherme-santos-coelho-1b7036210/" target="_blank"><AiFillLinkedin /></S.Icons>
+                            <S.Icons href="https://wa.me/5511992103006?text=Olá,%20🙂"><AiOutlineWhatsApp /></S.Icons>
+                        
                     </S.ContainerIcons>
                     </div>
 

@@ -72,7 +72,6 @@ export const showMore = styled.button`
 width:160px;
 height:40px;
 border:none;
-outline:none;
 background-color:transparent;
 display:flex;
 justify-content: space-between;
@@ -100,7 +99,8 @@ svg {
       width:120px;
   }
   @media (max-width:450px){
-      width:90px;
+      width:110px;
+      
       svg {
           scale:2.2;
       }
@@ -169,32 +169,51 @@ svg {
 `
 
 export const OtherPage = styled.button`
-
-background-color:transparent;
+margin-top:10px;
+background-color:var(--blue);
 border:none;
-position:absolute;
-height:80px;
-width:80px;
-left:20px;
-bottom:0px;
+height:50px;
+width:260px;
 padding:0;
+font-size:1.2rem;
+border:1px solid blue;
 cursor:pointer;
 padding:10px;
-border-radius:50%;
+border-radius:14px;
 display:flex;
+justify-content:space-between;
 place-items:center;
 svg {
-    width:80px;
+    width:40px;
     height:40px;
     animation:scrolldown 2s linear infinite;
  }
+p {
+    text-align:left;
+}
 
 @keyframes scrolldown {
-    0%{transform:translateY(0)}
-    50%{transform:translateY(20px)}
-    100%{transform:translateY(0)
+    0%{transform:translateY(-4px)}
+    50%{transform:translateY(4px)}
+    100%{transform:translateY(-4px)
 }}
 
+&:hover{
+    svg {
+        fill:var(--white);
+    }
+}
+
+@media (max-width:440px){
+    width:60px;
+    height:60px;
+    align-items:center;
+    justify-content:Center;
+    border-radius:50%;
+    p {
+        display:none;
+    }
+}
 `
 
 export const TotalProjects = styled.article`

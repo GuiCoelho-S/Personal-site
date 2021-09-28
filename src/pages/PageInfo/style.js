@@ -109,7 +109,7 @@ background-color: lightgrey;
 }
 `
 
-export const ContainerIcons = styled.aside`
+export const ContainerIcons = styled.nav`
 
 width:100%;
 display:flex;
@@ -123,7 +123,6 @@ width:40px;
 height:40px;
 display:grid;
 place-items:center;
-outline:none;
 
 svg {
   width:100%;
