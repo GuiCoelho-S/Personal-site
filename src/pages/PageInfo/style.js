@@ -16,6 +16,7 @@ export const Container = styled.div`
 export const Header = styled.header`
 padding:0 20px 0 20px;
 width:200px;
+
 height:auto;
 display:flex;
 flex-direction:column;
@@ -44,24 +45,12 @@ p {
     flex-direction: row;  
     padding:0;
    
-    div {
-      width:clamp(400px,100%,500px);
-    }
   }
-  
-@media (max-width:500px){
-  
-  article {
-    div {
-      width:75%;
 
-      p {
-        font-size:0.8rem;
-      }
-    }
-  }
 }
-
+@media (max-width:350px){
+  width:90%;
+  margin:0 auto;
 }
 
 `
