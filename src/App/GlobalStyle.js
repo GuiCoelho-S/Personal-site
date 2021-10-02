@@ -5,9 +5,7 @@ export default createGlobalStyle `
 
 
     body {
-        width:100%;
-        min-height:100vh;
-        height:100%;
+        
         background-color:#292929;
         margin:0;
         padding:0;

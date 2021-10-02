@@ -30,11 +30,11 @@ const SobreMim = () => {
                     <S.ContainerConteudo>
                     
                         <h2 id="sobreMim" data-aos="fade-left">Um apaixonado por programação</h2>
-                        <S.Text data-aos="fade-right">Olá 😃, me chamo Guilherme e sou desenvolvedor front end júnior, com foco em ReactJS</S.Text>
-                        <S.Text data-aos="fade-left">
+                        <S.Text data-aos="fade-in">Olá 😃, me chamo Guilherme e sou desenvolvedor front end júnior, com foco em ReactJS</S.Text>
+                        <S.Text data-aos="zoom-in">
                             <h5>Como cheguei até aqui?</h5>
                             Comecei a entrar no mundo da programação em março de 2021, depois de participar de uma feira online da Alura</S.Text>
-                        <S.Text data-aos="fade-right">Desde então, decidi entrar com todas as forças já decidido que essa seria minha profissão, igressei em uma faculdade com curso especializado em TI</S.Text>
+                        <S.Text data-aos="fade-in">Desde então, decidi entrar com todas as forças já decidido que essa seria minha profissão, igressei em uma faculdade com curso especializado em TI</S.Text>
                         <S.Cards>
                             <S.Card data-aos="zoom-in">
                                 <h3>Ciência da computação</h3>
@@ -48,12 +48,12 @@ const SobreMim = () => {
                             </S.Card>
                             
                         </S.Cards>
-                        <S.Text data-aos="fade-right">
+                        <S.Text data-aos="fade-in">
                             <h5>Tecnologias em aprendizado</h5>
                             Abaixo, segue as tecnologias que conheço e estudo ou pretendo estudar
                         </S.Text>
 
-                        <S.TechCards data-aos="zoom-in-down" data-aos-duration="4000">
+                        <S.TechCards data-aos="zoom-in-down">
                             {
                                 Tech.map((item,index) => {
                                     return <S.Card key={index}>
