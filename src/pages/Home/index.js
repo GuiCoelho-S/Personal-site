@@ -32,6 +32,8 @@ const Home = () => {
                         <S.Ballon><p>Continue arrastando para ver mais informações</p></S.Ballon>
                         <S.Image src={Cogumelo} alt="cogumelo do mário bros indicando que há mais informações para serem vistas"/>
                     </S.ViewMore>
+                   
+
                 </S.ContainerHome>
                 </Container>
                 <SobreMim />

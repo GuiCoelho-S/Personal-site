@@ -1,12 +1,5 @@
 import styled from 'styled-components';
 
-
-export const emptyDiv = styled.div`
-width:100%;
-padding-top:300px;
-
-
-`
 export const Cards = styled.section`
 display:flex;
 align-self:center;

@@ -25,7 +25,6 @@ const SobreMim = () => {
 
     return(
             <>
-            <S.emptyDiv />
             <S.ContainerColor>
                 <Container>
                     <S.ContainerConteudo>
