@@ -1,8 +1,8 @@
 import { SimpleText, Title } from 'components/common/text';
-import { CardAnotacao, LeiaMais, Code } from 'components/PageInfo/Anotacoes/style';
+import { CardAnotacao, LeiaMais, Code } from 'pages/Anotacoes/style';
 import { useState } from 'react';
 
-const ImgFilter = () => {
+const ImageFilter = () => {
 
     const [active, setActive] = useState(true);
 
@@ -78,4 +78,4 @@ const ImgFilter = () => {
     )
 }
 
-export default ImgFilter
+export default ImageFilter

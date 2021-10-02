@@ -16,7 +16,7 @@ height:100%;
 display:flex;
 align-items:center;
 justify-content: center;
-
+cursor:pointer;
 span {
     display:none;
     animation: ${FadeInAnimation} 2s;

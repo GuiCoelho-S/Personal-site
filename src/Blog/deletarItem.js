@@ -1,5 +1,5 @@
 import { SimpleText, Title } from 'components/common/text';
-import { CardAnotacao, LeiaMais, Code } from 'components/PageInfo/Anotacoes/style';
+import { CardAnotacao, LeiaMais, Code } from 'pages/Anotacoes/style';
 import { useState } from 'react';
 
 const DeletarItem = () => {

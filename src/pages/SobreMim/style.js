@@ -1,23 +1,10 @@
-import styled, { keyframes } from 'styled-components';
-import { Container } from 'components/common/container';
-
-/********************** */
-const fadeIn = keyframes`
-from{opacity:0;}
-to{opacity:1;}
-`
-
+import styled from 'styled-components';
 
 
 export const emptyDiv = styled.div`
 width:100%;
 padding-top:300px;
 
-h2 {
-    color:var(--blue);
-    font-size:clamp(1.5rem, -0.875rem + 8.333vw, 2rem);
-
-}
 
 `
 export const Cards = styled.section`
@@ -47,7 +34,7 @@ width:150px;`
 
 export const Card = styled.article`
     height:260px;
-    border:1px solid blue;
+    border:1px solid #e46666;;
     width:270px;
     display:flex;
     flex-direction: column;
@@ -58,10 +45,18 @@ export const Card = styled.article`
         width:200px;
         height:200px;
         fill:var(--orange);
+
+        &:hover {
+            fill:var(--orange);
+        }
     }
 
     p {
         color:black;
+    }
+
+    h3 {
+        color:#e46666;
     }
 `
 
@@ -78,15 +73,27 @@ font-size:clamp(1.1rem, -0.875rem + 8.333vw, 1.4rem);
 
 h5 {
     font-size:1.4rem;
-    color:var(--yellow)
+    color:var(--yellow);
+
 }
 `
-
-export const ContainerColor = styled(Container)`
+export const ContainerColor = styled.div`
 background-color:whitesmoke;
-height: 100%;
+width:100%;
+`
+
+export const ContainerConteudo = styled.div`
+display:flex;
+flex-direction:column;
 padding-bottom: 60px;
 
+h2 {
+    align-self:end;
+    color:var(--blue);
+    font-size:clamp(1.5rem, -0.875rem + 8.333vw, 2rem);
+
+
+}
 ${Text}:nth-child(2){
     align-self:start;
 }
@@ -121,5 +128,14 @@ export const TechCards = styled(Cards)`
 
  @media (max-width:900px){
      padding-left:0;
+ }
+
+ @media (max-width:400px){
+     gap:10px;
+
+     ${Card}{
+         width:150px;
+         height:180px;
+     }
  }
 `

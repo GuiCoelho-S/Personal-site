@@ -1,7 +1,8 @@
 import DropDown from 'components/DropDown';
-import { containerDiv } from 'components/DropDown/style';
+import Anotacoes from 'pages/Anotacoes';
+import Contato from 'pages/Contato';
 import Home from 'pages/Home';
-import PageInfo from 'pages/PageInfo';
+import Projetos from 'pages/Projects';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const AppRouter = () => {
@@ -14,8 +15,9 @@ const AppRouter = () => {
             
             <Switch>  
                 <Route exact path="/" component={Home}/>
-
-                <Route path="/main" component={PageInfo} />
+                <Route path="/projetosAutorais" component={Projetos} />
+                <Route path="/anotacoes" component={Anotacoes} />
+                <Route path="/contato" component={Contato} />
             </Switch>    
 
             

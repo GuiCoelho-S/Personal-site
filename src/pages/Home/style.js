@@ -1,3 +1,4 @@
+
 import styled, { keyframes } from 'styled-components';
 
 /*********************************/
@@ -5,9 +6,19 @@ const rotateImg = keyframes`
     from{rotate:0};
     to{rotate:360deg};
 `
+export const ContainerColor = styled.div`
+width:100%;
+height:100%;
+background-color: var(--gray);
+`
+export const ContainerHome = styled.div`
+display:flex;
+flex-direction:column;
+padding-left:70px;
 
-
+`
 export const Project = styled.article`
+align-self:end;
 height: 10vh;
 padding:0;
 padding-right:20px;
@@ -95,6 +106,7 @@ export const Image = styled.img`
 /***********************/
 
 export const ViewMore = styled.aside`
+align-self:end;
 height: 20vh;
 width:clamp(240px,90%, 340px);
 position: relative;
