@@ -1,18 +1,26 @@
+import DropDown from 'components/DropDown';
+import Anotacoes from 'pages/Anotacoes';
+import Contato from 'pages/Contato';
 import Home from 'pages/Home';
-import PageInfo from 'pages/PageInfo';
-import { BrowserRouter, Route } from 'react-router-dom';
+import Projetos from 'pages/Projects';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const AppRouter = () => {
 
 
     return(
         <BrowserRouter>
-            <Route exact path="/" component={Home}/>
+            
+            <DropDown />
+            
+            <Switch>  
+                <Route exact path="/" component={Home}/>
+                <Route path="/projetosAutorais" component={Projetos} />
+                <Route path="/anotacoes" component={Anotacoes} />
+                <Route path="/contato" component={Contato} />
+            </Switch>    
 
-            <Route path="/main" component={PageInfo}>
-                
-
-            </Route>
+            
             
         </BrowserRouter>
     )
