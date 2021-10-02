@@ -13,7 +13,6 @@ export default createGlobalStyle `
         padding:0;
         box-sizing: border-box;
         font-family: 'Montserrat', sans-serif;
-        
     }
 
     :root {
@@ -27,6 +26,7 @@ export default createGlobalStyle `
         --container:    #3f3f3f;
         --yellow:       #ffa800; 
         --font-size:       20px;
+        --headerContent: 40px;
     }
 
     li {

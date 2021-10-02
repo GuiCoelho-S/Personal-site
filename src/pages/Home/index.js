@@ -1,78 +1,39 @@
-import RingLoader from 'react-spinners/RingLoader';
-import { useState, useEffect } from 'react';
-import { AiOutlinePlusCircle, AiOutlineClockCircle, AiOutlineClose, AiOutlineArrowDown } from "react-icons/ai";
-import { GiBrazilFlag } from "react-icons/gi";
-import { FaBuilding } from "react-icons/fa";
-import { projects } from "data/projectData"
-import * as S from './style'
-import ReactImg from 'components/Home/IMGReact';
-import { useHistory } from 'react-router-dom';
+import { Container } from "components/common/container";
+import * as S from './style';
+import { projects } from "data/projectData";
+import { FaBuilding } from 'react-icons/fa'
+import { GiBrazil } from 'react-icons/gi'
+import { AiOutlineFieldTime } from 'react-icons/ai'
+import React from 'assets/img/react.png'
+import Cogumelo from 'assets/img/cogumelo.png'
+import SobreMim from "pages/SobreMim";
 
 const Home = () => {
-    const history = useHistory();
-    const [loading, setLoading] = useState(true);
-    const [showMore, setShowMore] = useState(false);
-    const [nextPage, setNextPage] = useState(false);
-
-    useEffect(() => {
-        setTimeout(() => {
-            setLoading(false);
-            setNextPage(true);
-        }, 2000)
-    });
 
     return(
-        <S.Container>
-        {   
-        loading
+        <Container>       
+                <S.Project><p>Projetos feitos: </p><span>{projects.length}</span></S.Project>
+                <S.conteudoMain>
+                    <S.Info>
+                        <h1>Guilherme Coelho</h1>
+                        <h2>Desenvolvedor front end</h2>
 
-        ?   <RingLoader size={100} color={"#34effb"}/> 
-        :   <S.Content>
-                <section>
-                    <S.DivMain>
-                        <S.Title>Guilherme Coelho</S.Title>
-                            {
-                                showMore 
-                                ?   (<S.Informations>
-                                        <S.TitleTwo>Desenvovedor front-end</S.TitleTwo>
-                                        <div><FaBuilding /><p>cidade: São Paulo</p><GiBrazilFlag /></div>
-                                        <div><AiOutlineClockCircle /><p>19 anos</p></div>
-                                        <S.OtherPage 
-                                            onClick={() => history.push('/main')}>
-                                                <p>Mais informações</p><AiOutlineArrowDown />
-                                        </S.OtherPage>
+                        <div><FaBuilding /><p>São Paulo / SP</p><GiBrazil /></div>   
+                        <div><AiOutlineFieldTime /><p>19 anos</p></div> 
+                    </S.Info> 
+                    <aside>
+                        <S.Image src={React} alt="Logo do reactJS girando infinitamente" /> 
+                    </aside>
+                </S.conteudoMain>   
+                <S.ViewMore>
+                    <S.Ballon><p>Continue arrastando para ver mais informações</p></S.Ballon>
+                    <S.Image src={Cogumelo} alt="cogumelo do mário bros indicando que há mais informações para serem vistas"/>
+                </S.ViewMore>
 
-                                        <S.hidden
-                                            onClick={() => setShowMore(!showMore)}><AiOutlineClose />
-                                        </S.hidden>
-                                    </S.Informations>)
-                        
-                                :   (<S.showMore 
-                                        onClick={() => setShowMore(!showMore)}>
-                                            <p>Ver mais</p><AiOutlinePlusCircle />
-                                    </S.showMore>)
-                            }
-                    </S.DivMain>
-
-                    <S.ImgContainer>
-                        <ReactImg />
-                    </S.ImgContainer>
-                </section>             
-            </S.Content>  
-        }
-        {
-            nextPage 
-            ? (
-                <S.TotalProjects>
-                    <p>Projetos feitos:</p>
-                    <S.Circle>{projects.length}</S.Circle>
-                </S.TotalProjects>) 
-            
-            : <></>
-        }
-        </S.Container>
+                <SobreMim>
+                    
+                </SobreMim>       
+        </Container>
     )
-}
-
+    }
 export default Home;
-
