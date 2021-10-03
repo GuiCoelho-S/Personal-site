@@ -15,7 +15,8 @@ flex-direction:column;
 
 }
 @media (max-width:500px){
-  padding:0 10px ;
+  padding:0 10px 40px 0;
+  box-sizing:border-box;
 }
 `
 
@@ -50,7 +51,6 @@ display:grid;
 justify-content: center;
 grid-template-columns:repeat(auto-fit, minmax(auto,440px));
 gap:20px;
-
 `
 
 export const Img = styled.img`
@@ -110,6 +110,7 @@ aside {
 @media (max-width:350px){
   padding:0 5px 10px 0;
   width:90%;
+  margin:0 auto;
 }
 `
 

@@ -19,10 +19,10 @@ h1 {
 @media (max-width:500px){
   padding:40px 20px;
 }
-@media (max-width:350px){
-    padding:40px 0 40px 0;
-    width:90%;
-    margin:0 auto;
+@media (max-width:400px){
+    width:100%;
+    padding:5px;
+    box-sizing:border-box;
 }
 `
 export const CardAnotacao = styled.article`
@@ -53,7 +53,10 @@ p {
       width:90%;
   }
 
-
+  @media (max-width:420px){
+      padding:10px;
+      width:90%;
+  }
 `
 
 export const LeiaMais = styled.button`
