@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 export const ContainerContato = styled.div`
-width:100%;
+width:clamp(200px,100%,600px);
 display:flex;
 flex-direction:column;
 align-items:center;
 padding-bottom:40px;
 form {
-    width:clamp(240px, 100%, 600px);
+    width:100%;
     display:flex;
     flex-direction:column;
     gap:20px;
@@ -22,6 +22,7 @@ form {
     }
     input {
         height:35px;
+        width:90%;
         border:1px solid #eb3838;
         border-radius:6px;
         padding-left:8px;
@@ -49,7 +50,9 @@ form {
         }
     }
 }
-
+@media (max-width:400px){
+    padding:0 ;
+}
 }
 h2 {
     color:#eb3838;
@@ -59,9 +62,6 @@ h2 {
     font-family: 'Orbitron', sans-serif;
 }
 
-@media (max-width:500px){
-    padding:0 20px;
-}
 `
 
 export const SubmitBtn = styled.button`

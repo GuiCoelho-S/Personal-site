@@ -15,7 +15,7 @@ flex-direction:column;
 
 }
 @media (max-width:500px){
-  padding-left:0 ;
+  padding:0 10px ;
 }
 `
 
@@ -48,7 +48,7 @@ width:100%;
 max-width:1000px;
 display:grid;
 justify-content: center;
-grid-template-columns:repeat(auto-fit, minmax(300px,440px));
+grid-template-columns:repeat(auto-fit, minmax(auto,440px));
 gap:20px;
 
 `
@@ -106,6 +106,11 @@ aside {
     
         }
     }
+
+@media (max-width:350px){
+  padding:0 5px 10px 0;
+  width:90%;
+}
 `
 
 export const SingleCardReact = styled(SingleCard)`

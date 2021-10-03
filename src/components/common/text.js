@@ -24,6 +24,7 @@ export const Title = styled.h1`
 
   @media (max-width:400px){
     text-align:center;
+    padding:0;
   }
 `;
 
@@ -44,6 +45,10 @@ font-weight: 300;
 line-height:26px;
 @media (max-width:600px){
   width:100%;
+}
+
+@media (max-width:350px){
+  width:90%;
 }
 `
 

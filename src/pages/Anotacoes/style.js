@@ -19,9 +19,14 @@ h1 {
 @media (max-width:500px){
   padding:40px 20px;
 }
+@media (max-width:350px){
+    padding:40px 0 40px 0;
+    width:90%;
+    margin:0 auto;
+}
 `
 export const CardAnotacao = styled.article`
-width:clamp(300px,100%,800px);
+width:clamp(280px,100%,800px);
 background-color:#6c6c6c;
 padding:10px 30px;
 min-height:70px;
@@ -47,6 +52,8 @@ p {
       padding:20px;
       width:90%;
   }
+
+
 `
 
 export const LeiaMais = styled.button`
