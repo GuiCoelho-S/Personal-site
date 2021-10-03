@@ -1,11 +1,5 @@
 import styled from 'styled-components';
 
-export const ContainerColor = styled.div`
-  width:100%;
-  height:100%;
-  background-color:whitesmoke;
-`;
-
 export const ContainerContato = styled.div`
 width:100%;
 display:flex;

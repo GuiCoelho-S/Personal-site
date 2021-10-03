@@ -10,6 +10,7 @@ gap:10px;
 flex-wrap:wrap;
 
 `
+
 export const Image = styled.div`
         width:300px;
         height:300px;
@@ -74,6 +75,13 @@ export const ContainerColor = styled.div`
 background-color:whitesmoke;
 width:100%;
 `
+export const Container = styled.div`
+width:100%;
+max-width:1280px;
+min-height:100vh;
+height:100%;
+`
+
 
 export const ContainerConteudo = styled.div`
 display:flex;
@@ -84,7 +92,6 @@ h2 {
     align-self:end;
     color:var(--blue);
     font-size:clamp(1.5rem, -0.875rem + 8.333vw, 2rem);
-
 
 }
 ${Text}:nth-child(2){

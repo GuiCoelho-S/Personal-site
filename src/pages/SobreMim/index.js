@@ -14,7 +14,8 @@ import ReactNative from 'assets/img/react-native.png';
 import Node from 'assets/img/node.png';
 
 import { Tech } from 'data/techData';
-import { Container } from 'components/common/container';
+import { Container, ContainerColor } from 'components/common/container';
+import * as Color from 'components/common/varColors';
 
 const SobreMim = () => {
 
@@ -25,12 +26,12 @@ const SobreMim = () => {
 
     return(
             <>
-            <S.ContainerColor>
+            <ContainerColor color={Color.white}>
                 <Container>
                     <S.ContainerConteudo>
                     
-                        <h2 id="sobreMim" data-aos="fade-left">Um apaixonado por programação</h2>
-                        <S.Text data-aos="fade-in">Olá 😃, me chamo Guilherme e sou desenvolvedor front end júnior, com foco em ReactJS</S.Text>
+                        <h2 id="sobreMim" data-aos="zoom-in">Um apaixonado por programação</h2>
+                        <S.Text data-aos="fade-in-out">Olá 😃, me chamo Guilherme e sou desenvolvedor front end júnior, com foco em ReactJS</S.Text>
                         <S.Text data-aos="zoom-in">
                             <h5>Como cheguei até aqui?</h5>
                             Comecei a entrar no mundo da programação em março de 2021, depois de participar de uma feira online da Alura</S.Text>
@@ -68,7 +69,7 @@ const SobreMim = () => {
                         </S.TechCards>
                     </S.ContainerConteudo>
                 </Container>    
-            </S.ContainerColor>
+            </ContainerColor>
             </>
             
     )

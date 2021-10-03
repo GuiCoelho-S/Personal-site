@@ -1,14 +1,9 @@
 import styled from 'styled-components';
 
-export const ContainerColor = styled.div`
-  background-color:#222222;
-  width:100%;
-  height:100%;
-`;
-
 export const ContainerFooter = styled.div`
-margin-left:auto;
-
+display:flex;
+justify-content: end;
+background-color: ${(props) => props.color};
 p {
   font-size:1.4rem;
 }

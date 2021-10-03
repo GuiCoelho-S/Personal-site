@@ -7,18 +7,11 @@ const rotateImg = keyframes`
     to{rotate:360deg};
 `
 
-
-export const ContainerColor = styled.div`
-width:100%;
-height:100%;
-background-color: var(--gray);
-`
 export const ContainerHome = styled.div`
 display:flex;
 flex-direction:column;
-padding-left:70px;
 padding-bottom:200px;
-
+padding-left:70px;
 @media (max-width:500px){
     padding-left:0;
 }

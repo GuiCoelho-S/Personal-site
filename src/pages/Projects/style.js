@@ -1,11 +1,5 @@
 import styled from 'styled-components';
 
-export const ContainerColor = styled.div`
-  width:100%;
-  height:100%;
-  background-color:#2c2c2c;
-`;
-
 export const ContainerProjets = styled.div`
 padding-bottom:40px;
 width:100%;

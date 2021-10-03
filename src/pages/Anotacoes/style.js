@@ -1,11 +1,5 @@
 import styled from 'styled-components';
 
-export const ContainerColor = styled.div`
-  height:100%;
-  width:100%;
-  background-color:white;
-`;
-
 export const ContainerAnotacoes = styled.div`
 padding:40px 0 40px 70px;
 min-height:100vh;
