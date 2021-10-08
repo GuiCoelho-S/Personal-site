@@ -4,7 +4,6 @@ import Footer from 'components/Footer';
 import emailjs from 'emailjs-com';
 import React, { useRef } from 'react';
 import * as Color from 'components/common/varColors';
-import * as S from './style';
 
 const Contato = () => {
 
