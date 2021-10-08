@@ -1,5 +1,9 @@
 import styled from 'styled-components';
+import { Container, ContainerColor } from 'components/common/container';
 
+export const ContainerColorCenter = styled(ContainerColor)`
+    margin:0 auto;
+`
 export const ContainerContato = styled.div`
 width:clamp(200px,100%,600px);
 display:flex;
