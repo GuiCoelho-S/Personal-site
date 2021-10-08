@@ -4,6 +4,7 @@ import Footer from 'components/Footer';
 import emailjs from 'emailjs-com';
 import React, { useRef } from 'react';
 import * as Color from 'components/common/varColors';
+import * as S from './style';
 
 const Contato = () => {
 
@@ -22,7 +23,7 @@ const Contato = () => {
 
     return(
         <>
-            <ContainerColor color={Color.white}>
+            <S.ContainerColorCenter color={Color.white}>
                 <Container>
                     <S.ContainerContato>
                         <h2>Formulário de contato</h2>
@@ -50,7 +51,7 @@ const Contato = () => {
                     </S.ContainerContato>
                 </Container>
                 <Footer />
-            </ContainerColor>
+            </S.ContainerColorCenter>
             
         </>
     )
