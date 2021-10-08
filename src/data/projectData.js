@@ -108,5 +108,15 @@ export const projects = [
         description:"Aplicação que simula a compra de frutas por um mercado virtual. Eu criei esse projeto para gerenciar estados globais da aplicação, com o uso do useContext, possuindo resposta personalizada dependendo da interação do usuário.",
         data:"Agosto, 2021",
     },
+    {
+        type:"react",
+        id:13,
+        title:"React music",
+        code:"https://github.com/GuiCoelho-S",
+        site:"https://react-musicjs.netlify.app/",
+        description:"Aplicação que simula umn aplicativo de música, usa dados vindos da API do deezer e tem como transmissão de dados o uso do redux.",
+        data:"Outubro, 2021",
+    },
+      
    
 ]
