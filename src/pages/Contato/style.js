@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Container, ContainerColor } from 'components/common/container';
+import { ContainerColor } from 'components/common/container';
 
 export const ContainerColorCenter = styled(ContainerColor)`
     margin:0 auto;
