@@ -1,5 +1,5 @@
 import * as S from './style';
-import { Container, ContainerColor } from 'components/common/container';
+import { Container } from 'components/common/container';
 import Footer from 'components/Footer';
 import emailjs from 'emailjs-com';
 import React, { useRef } from 'react';
