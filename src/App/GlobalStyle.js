@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
-export default createGlobalStyle `
+export default createGlobalStyle`
     
 
 
@@ -11,6 +11,10 @@ export default createGlobalStyle `
         padding:0;
         box-sizing: border-box;
         font-family: 'Montserrat', sans-serif;
+        
+        * {
+            margin:0;
+        }
         
     }
 
@@ -40,7 +44,6 @@ h1, p {
     color:white;
 }
 
-
 svg {
     fill:var(--white);
     transition:all 0.4s ease-in-out;
@@ -49,4 +52,6 @@ svg {
 svg:hover{
     fill:var(--blue);
 }
-`
+
+
+`;
