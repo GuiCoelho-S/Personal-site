@@ -1,13 +1,10 @@
-<<<<<<< HEAD
 import styled from "styled-components";
-=======
-import styled from 'styled-components';
-import { ContainerColor } from 'components/common/container';
->>>>>>> 3981b9217902360f4651637715ff71bbdfb65a1e
+import { ContainerColor } from "components/common/container";
 
 export const ContainerColorCenter = styled(ContainerColor)`
-    margin:0 auto;
-`
+  margin: 0 auto;
+`;
+
 export const ContainerContato = styled.div`
   width: clamp(200px, 100%, 1280px);
   display: flex;
@@ -86,7 +83,6 @@ export const ContainerContato = styled.div`
   }
 `;
 
-<<<<<<< HEAD
 export const SubmitBtn = styled.button`
   width: 200px;
   height: 50px;
@@ -103,7 +99,3 @@ export const SubmitBtn = styled.button`
     border: 1px solid red;
   }
 `;
-=======
-}
-`
->>>>>>> 3981b9217902360f4651637715ff71bbdfb65a1e
