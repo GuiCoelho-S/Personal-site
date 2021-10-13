@@ -12,7 +12,8 @@ export const ContainerFooter = styled.div`
     padding-bottom: 100px;
   }
   @media (max-width: 600px) {
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 80px;
   }
 `;
 

@@ -55,6 +55,7 @@ export const ContainerCards = styled.section`
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(auto, 440px));
   gap: 40px;
+  padding-bottom: 40px;
 `;
 
 export const Img = styled.img`

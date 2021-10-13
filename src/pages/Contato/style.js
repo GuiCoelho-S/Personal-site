@@ -63,7 +63,6 @@ export const ContainerContato = styled.div`
   @media (max-width: 600px) {
     padding: 0 10px;
     box-sizing: border-box;
-
     input,
     textarea {
       width: 90% !important;
@@ -76,7 +75,7 @@ export const ContainerContato = styled.div`
     font-style: bold;
     font-weight: 400;
     font-family: "Orbitron", sans-serif;
-
+    padding: 20px 0;
     @media (max-width: 600px) {
       font-size: 1.5rem;
     }
